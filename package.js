@@ -1,17 +1,18 @@
 Package.describe({
   name: 'ernestorocha:sparkjs',
   summary: 'Package for easier sparkJS integration with Meteor',
-  version: '0.0.1',
+  version: '0.0.2',
   git: 'https://github.com/ernestorocha/meteor-sparkjs.git'
+});
+
+Npm.depends({
+    'spark': '0.2.1'
 });
 
 Package.onUse(function(api) {
   api.versionsFrom("0.9.4");
-  api.addFiles('lib/sparkjs/lib/device.js');
-  api.addFiles('lib/sparkjs/lib/spark-api.js');
-  api.addFiles('lib/sparkjs/lib/spark-browser-style.css');
-  api.addFiles('lib/sparkjs/lib/spark-browser.js');
-  api.addFiles('lib/sparkjs/lib/spark.js');
+  api.addFiles(['sparkjs.js'], 'server');
+  api.export('Spark', 'server');
 });
 
 Package.onTest(function(api) {
