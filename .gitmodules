@@ -1,3 +1,0 @@
-[submodule "lib/sparkjs"]
-	path = lib/sparkjs
-	url = git@github.com:spark/sparkjs.git
