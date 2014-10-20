@@ -16,4 +16,4 @@ $ meteor add ernestorocha:sparkjs
 
 ## Usage
 
-Now you have a global object ``Spark`` on the server and now you can use the [oficial API](https://github.com/spark/sparkjs).
+Now you have a global object ``Spark`` on the server and now you can use the [official API](https://github.com/spark/sparkjs).
