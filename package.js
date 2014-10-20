@@ -7,7 +7,11 @@ Package.describe({
 
 Package.onUse(function(api) {
   api.versionsFrom("0.9.4");
-  api.addFiles('ernestorocha:sparkjs.js');
+  api.addFiles('lib/sparkjs/lib/device.js');
+  api.addFiles('lib/sparkjs/lib/spark-api.js');
+  api.addFiles('lib/sparkjs/lib/spark-browser-style.css');
+  api.addFiles('lib/sparkjs/lib/spark-browser.js');
+  api.addFiles('lib/sparkjs/lib/spark.js');
 });
 
 Package.onTest(function(api) {
