@@ -6,7 +6,7 @@ Package.describe({
 });
 
 Npm.depends({
-    'spark': '0.2.1'
+    'spark': '0.2.2'
 });
 
 Package.onUse(function(api) {
